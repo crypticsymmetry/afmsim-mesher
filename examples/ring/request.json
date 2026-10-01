@@ -1,0 +1,19 @@
+{
+  "protocol": 2,
+  "ir": {
+    "volumes": {
+      "Body": [{"r_inner_mm": 20, "r_outer_mm": 40, "z_start_mm": 0, "z_end_mm": 3,
+                "theta_start_deg": 0, "theta_end_deg": 30, "tag": "Body"}],
+      "Layer": [{"r_inner_mm": 20, "r_outer_mm": 40, "z_start_mm": 3, "z_end_mm": 4,
+                 "theta_start_deg": 0, "theta_end_deg": 30, "tag": "Layer"}],
+      "Air": [{"r_inner_mm": 10, "r_outer_mm": 50, "z_start_mm": -5, "z_end_mm": 9,
+               "theta_start_deg": 0, "theta_end_deg": 30, "tag": "Air"}]
+    },
+    "sector_angle_deg": 30, "r_inner_mm": 20, "r_outer_mm": 40, "total_axial_mm": 4
+  },
+  "sizes": {"table": {"Body": 4, "Layer": 4, "Air": 8},
+            "global_min_mm": 1, "global_max_mm": 8},
+  "structured": {"regions": ["Layer"], "arc_radius_mm": 40, "arrangement": "Alternate",
+                 "prisms": false},
+  "output": "ring.msh"
+}

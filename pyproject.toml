@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "afmsim-mesher"
+version = "2.0.0"
+description = "The Axial Flux simulator's Gmsh mesher, run as a separate program: JSON in, .msh or .step out."
+readme = "README.md"
+license = "GPL-2.0-or-later"
+license-files = ["COPYING"]
+requires-python = ">=3.10"
+dependencies = ["gmsh>=4.15", "numpy"]
+
+[project.scripts]
+afmsim-mesher = "afmsim_mesher.__main__:cli"
+
+[tool.setuptools]
+packages = ["afmsim_mesher"]
